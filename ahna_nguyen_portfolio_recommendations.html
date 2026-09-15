@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahna Nguyen - IT Specialist II & Professional Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-slate-900/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/30 font-bold text-white text-lg">
+                    AN
+                </div>
+                <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-indigo-300 bg-clip-text text-transparent">
+                    Ahna Nguyen<span class="text-indigo-400">.</span>
+                </span>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-indigo-400 transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-indigo-400 transition-colors">Skills & Certs</a>
+                <a href="#recommendations" class="hover:text-indigo-400 transition-colors">Recommendations</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="mailto:nhu.nnq91@gmail.com" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-all shadow-lg shadow-indigo-600/20 active:scale-95 flex items-center space-x-2">
+                    <i class="fa-solid fa-envelope text-xs"></i>
+                    <span>Contact Me</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="relative overflow-hidden py-20 lg:py-28 border-b border-slate-900">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-900/20 via-slate-950 to-slate-950 pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-6 uppercase tracking-wider">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>IT Specialist II & Operations Professional</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
+                Hi, I'm <span class="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">Ahna Nguyen</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                Bridging commercial mindset with technical infrastructure. Experienced in IT administration, enterprise workflow automation (N8N, AI tools), data analysis, and compliance standards (HIPAA, SOC 2).
+            </p>
+
+            <div class="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-300">
+                <span class="flex items-center space-x-2 bg-slate-900 border border-slate-800 px-4 py-2 rounded-xl">
+                    <i class="fa-solid fa-location-dot text-indigo-400"></i>
+                    <span>Bay Area, CA</span>
+                </span>
+                <span class="flex items-center space-x-2 bg-slate-900 border border-slate-800 px-4 py-2 rounded-xl">
+                    <i class="fa-solid fa-phone text-indigo-400"></i>
+                    <span>408 410 5003</span>
+                </span>
+                <a href="https://www.linkedin.com/in/msnhunguyen" target="_blank" class="flex items-center space-x-2 bg-slate-900 border border-slate-800 px-4 py-2 rounded-xl hover:text-indigo-400 transition-colors">
+                    <i class="fa-brands fa-linkedin text-indigo-400"></i>
+                    <span>LinkedIn Profile</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full space-y-16">
+        
+        <div id="experience">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">Work Experience</h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- iHealth Labs -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">IT Specialist II</h3>
+                            <p class="text-indigo-400 font-medium">iHealth Labs / Unika Health · Sunnyvale, CA</p>
+                        </div>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 mt-2 sm:mt-0 w-max">
+                            2/2023 - 9/2026
+                        </span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-4">Transitioned internally from Business Development & Marketing to IT, bringing a commercial mindset to technical infrastructure.</p>
+                    <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm">
+                        <li><strong>IT Admin & Support:</strong> Managed 50+ enterprise apps, providing technical operations and training for 250+ team members.</li>
+                        <li><strong>Automation & Data:</strong> Designed automated workflows using N8N and AI tools (ChatGPT, Claude, Gemini), analyzing healthcare data to save $100K annually in lead costs.</li>
+                        <li><strong>Compliance & Risk Control:</strong> Enforced compliance standards (HIPAA, SOC 2, ISO 42001), wrote/updated policies, and supported IT risk assessments.</li>
+                    </ul>
+                </div>
+
+                <!-- HNCN Realty -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Property Manager</h3>
+                            <p class="text-indigo-400 font-medium">HNCN Realty Management · San Jose, CA</p>
+                        </div>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-500/10 text-slate-300 border border-slate-800 mt-2 sm:mt-0 w-max">
+                            2022 - 2024
+                        </span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm">
+                        <li>Supervised an 18-unit residential complex, ensuring compliance with regulations and high tenant satisfaction.</li>
+                        <li>Analyzed rental data and financial metrics to optimize operational revenue.</li>
+                        <li>Managed vendor relationships and service contracts to ensure cost-efficiency and compliance.</li>
+                    </ul>
+                </div>
+
+                <!-- Intero Real Estate -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Marketing - IT Coordinator</h3>
+                            <p class="text-indigo-400 font-medium">Intero Real Estate Services · Fremont, CA</p>
+                        </div>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-500/10 text-slate-300 border border-slate-800 mt-2 sm:mt-0 w-max">
+                            2021 - 2022
+                        </span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm">
+                        <li>Provided real-time Marketing and IT assistance to over 150 realtors and brokers.</li>
+                        <li>Mastered over 20 marketing platforms, CRM software, and administrative tools.</li>
+                    </ul>
+                </div>
+
+                <!-- Leadway International -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Office Assistant</h3>
+                            <p class="text-indigo-400 font-medium">Leadway International · Hayward, CA</p>
+                        </div>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-500/10 text-slate-300 border border-slate-800 mt-2 sm:mt-0 w-max">
+                            2020 - 2021
+                        </span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-slate-300 text-sm">
+                        <li>Supported HR, payroll processing, and rapid warehouse recruitment during COVID-19.</li>
+                        <li>Managed logistics, DOT transportation compliance, procurement, and inventory for office supplies.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Technical Skills -->
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-10 h-10 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Technical Skills</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium">Workflow Automation (N8N)</span>
+                    <span class="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium">AI Tools (ChatGPT, Claude, Gemini)</span>
+                    <span class="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium">Microsoft 365</span>
+                    <span class="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium">Google Workspace</span>
+                    <span class="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium">Enterprise App Admin (Zoho, Jira, Zoom)</span>
+                    <span class="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-medium">Bilingual (English, Vietnamese)</span>
+                </div>
+            </div>
+
+            <!-- Certifications & Education -->
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Certificates & Education</h3>
+                </div>
+                <ul class="space-y-3 text-sm text-slate-300">
+                    <li class="flex items-center justify-between pb-2 border-b border-slate-800">
+                        <span>Google AI Professional</span>
+                        <span class="text-xs text-indigo-400 font-semibold">2026</span>
+                    </li>
+                    <li class="flex items-center justify-between pb-2 border-b border-slate-800">
+                        <span>AWS Certified Cloud Practitioner</span>
+                        <span class="text-xs text-indigo-400 font-semibold">2022</span>
+                    </li>
+                    <li class="flex items-center justify-between pb-2 border-b border-slate-800">
+                        <span>Network Technology, CalBright College</span>
+                        <span class="text-xs text-slate-500 font-semibold">In Progress</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <span>MBA, University of the People</span>
+                        <span class="text-xs text-slate-500 font-semibold">2025</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="recommendations" class="pt-8 border-t border-slate-900">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-4 uppercase tracking-wider">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <span>Recommendations & Endorsements</span>
+                </div>
+                <h2 class="text-3xl font-extrabold text-white">What Colleagues Say</h2>
+                <p class="text-slate-400 text-sm mt-2">Professional endorsements and recommendations from managers and mentors throughout my career.</p>
+            </div>
+
+            <!-- Recommendations Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Recommendation 1: Tracy L -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-2xl bg-indigo-500/15 border border-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-lg">
+                                    TL
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-white">Tracy L</h3>
+                                    <p class="text-indigo-400 text-xs font-medium">HR Manager at Leadway International</p>
+                                </div>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold">
+                                Endorsed
+                            </span>
+                        </div>
+                        <blockquote class="text-slate-300 text-sm sm:text-base leading-relaxed italic mb-6">
+                            "Ahna is a responsible employee who demonstrated great attention to details and was able to deliver quality work as expected. She is also eager to challenge herself. Good ethic and integrity. With suitable directions, she is definitely a plus to any team."
+                        </blockquote>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 text-xs text-slate-500 flex items-center justify-between">
+                        <span>Leadway International</span>
+                        <i class="fa-brands fa-linkedin text-slate-400 text-sm"></i>
+                    </div>
+                </div>
+
+                <!-- Recommendation 2: Tâm -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-2xl bg-violet-500/15 border border-violet-500/20 text-violet-400 flex items-center justify-center font-bold text-lg">
+                                    T
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-white">Tâm</h3>
+                                    <p class="text-violet-400 text-xs font-medium">Managing Director at GoldenPen PR</p>
+                                </div>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold">
+                                Endorsed
+                            </span>
+                        </div>
+                        <blockquote class="text-slate-300 text-sm sm:text-base leading-relaxed italic mb-6">
+                            "I was previously associated with Nhu at GoldenPen PR. During short-term we worked together, I found her to be dedicated to her profession, proficient in her job duties. I would not hesitate to recommend Nhu of any position she feels qualified to seek and I encourage your favorable consideration of her application."
+                        </blockquote>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 text-xs text-slate-500 flex items-center justify-between">
+                        <span>GoldenPen PR & Event Agency</span>
+                        <i class="fa-brands fa-linkedin text-slate-400 text-sm"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="border-t border-slate-900 bg-slate-950 py-12 mt-auto">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-slate-500 text-sm">
+            <p>&copy; <span id="currentYear"></span> Ahna Nguyen. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="#about" class="hover:text-slate-300 transition-colors">Back to top <i class="fa-solid fa-arrow-up ml-1 text-xs"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
