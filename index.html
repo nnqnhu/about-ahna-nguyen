@@ -42,7 +42,7 @@
                     Ahna Nguyen
                 </span>
             </div>
-            
+                        
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
                 <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
                 <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
@@ -51,11 +51,40 @@
                 <a href="#recommendations" class="hover:text-sky-400 transition-colors">Recommendations</a>
             </nav>
 
-            <div>
-                <a href="mailto:nhu.nnq91@gmail.com" class="px-4 py-2 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-medium text-xs tracking-wide transition-all shadow-sm flex items-center space-x-2">
+            <div class="relative">
+                <!-- Contact Me Button with Toggle -->
+                <button id="contactBtn" onclick="toggleContactModal()" class="px-4 py-2 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-medium text-xs tracking-wide transition-all shadow-sm flex items-center space-x-2 cursor-pointer">
                     <i class="fa-solid fa-envelope text-xs"></i>
                     <span>Contact Me</span>
-                </a>
+                </button>
+
+                <!-- Contact Popup Card -->
+                <div id="contactModal" class="hidden absolute right-0 mt-2 w-72 bg-cardBg border border-cardBorder rounded-xl p-4 shadow-xl z-50">
+                    <div class="flex items-center justify-between mb-3 pb-2 border-b border-cardBorder">
+                        <span class="text-xs font-bold text-white uppercase tracking-wider">Direct Contact</span>
+                        <button onclick="toggleContactModal()" class="text-slate-400 hover:text-white text-xs"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="space-y-3 text-xs">
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <div class="w-7 h-7 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="truncate">
+                                <p class="text-[10px] text-slate-500 font-medium">Email</p>
+                                <a href="mailto:nhu.nnq91@gmail.com" class="text-sky-400 hover:underline truncate">nhu.nnq91@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <div class="w-7 h-7 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-slate-500 font-medium">Phone</p>
+                                <a href="tel:4084105003" class="text-slate-200 hover:text-sky-400">408 410 5003</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -74,7 +103,12 @@
                 Cybersecurity and IT Audit professional pursuing advanced specializations in AI Security (CompTIA SecAI+) and AI Governance & Auditing (ISACA AAIA). Experienced in technical infrastructure, enterprise automation, and compliance (HIPAA, SOC 2, ISO 42001).
             </p>
 
+            <!-- Added Email in Top Hero Details -->
             <div class="mt-8 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm text-slate-300">
+                <a href="mailto:nhu.nnq91@gmail.com" class="flex items-center space-x-2 bg-cardBg border border-cardBorder px-3.5 py-2 rounded-lg hover:text-sky-400 transition-colors">
+                    <i class="fa-solid fa-envelope text-sky-400"></i>
+                    <span>nhu.nnq91@gmail.com</span>
+                </a>
                 <span class="flex items-center space-x-2 bg-cardBg border border-cardBorder px-3.5 py-2 rounded-lg">
                     <i class="fa-solid fa-location-dot text-sky-400"></i>
                     <span>Bay Area, CA</span>
@@ -93,7 +127,7 @@
 
     <!-- Main Content -->
     <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full space-y-16">
-        
+                
         <!-- Experience Section -->
         <div id="experience">
             <div class="flex items-center space-x-3 mb-6">
@@ -422,7 +456,6 @@
 
             </div>
         </div>
-
     </main>
 
     <!-- Footer -->
@@ -433,8 +466,23 @@
         </div>
     </footer>
 
+    <!-- Script to handle year, modal toggle, and outside click behavior -->
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function toggleContactModal() {
+            const modal = document.getElementById('contactModal');
+            modal.classList.toggle('hidden');
+        }
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', function(e) {
+            const btn = document.getElementById('contactBtn');
+            const modal = document.getElementById('contactModal');
+            if (!btn.contains(e.target) && !modal.contains(e.target)) {
+                modal.classList.add('hidden');
+            }
+        });
     </script>
 </body>
 </html>
